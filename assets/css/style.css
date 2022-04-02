@@ -207,6 +207,11 @@ background-color: white;
 /* ------------------------------
 # Shop With Us Section
 ------------------------------ */
+#shop-with-us {
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
 .shop-with-us .icon-box {
     padding: 30px;
     position: relative;
@@ -255,12 +260,15 @@ background-color: white;
 
 .shop-with-us .title a {
     color: #111;
+    font-family: Bree;
+    text-decoration: none;
 }
 
 .shop-with-us .description {
     font-size: 15px;
     line-height: 28px;
     margin-bottom: 0;
+    font-family: Alegraya;
 }
 .shop-with-us .icon-box:hover .title a, .featured-services .icon-box:hover .description {
     color: #fff;
@@ -268,6 +276,12 @@ background-color: white;
 
 .shop-with-us .icon-box:hover .icon i {
     color: #fff;
+}
+
+#shop-with-us-h1 {
+    font-family: Bree;
+    text-align: center;
+    margin-bottom: 15px;
 }
 /* ------------------------------
 # Main
