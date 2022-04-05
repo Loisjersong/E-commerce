@@ -16,49 +16,53 @@ p {
     Alegraya
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* ------------------------------
 # Navbar
 ------------------------------ */
 .nav-container {
-    background-color: #293241;
+    background-color: whitesmoke;
     
 }
 
 .nav-link {
-    color: white;
+    color: black;
 }
 
 .nav-link:hover {
-    color: #98c1d9;
+    color: #ff5722;
 }
 
 .nav-link:active {
-    color: #3d5a80;
+    color: #ff5722;
 }
 
 .nav-link:after {
-    color: white;
+    color: black;
 }
 
 a {
-    color: white;
+    color: black;
 }
 
 a:hover {
-    color: #98c1d9;
+    color: #ff5722;
 }
 
 a:active {
-    color: #3d5a80;
+    color: #ff5722;
 }
 
 a:after {
-    color: white;
+    color: black;
 }
 
 .navbar-toggler {
-background-color: white;
+background-color: black;
 }
 
 .navbar-toggler-icon {
@@ -66,7 +70,7 @@ background-color: white;
 }
 
 .navbar-toggler {
-    border-color: #ffffff;
+    border-color: black;
     background-color: #293241;
 }
 
@@ -90,7 +94,8 @@ background-color: white;
 
 @media (min-width:992px) {
     #yourcart {
-        background-color: #ee6c4d;
+        background-color: #ff5722;
+        color: white;
     }
 }
 
@@ -166,7 +171,7 @@ background-color: white;
     border-radius: 4px;
     transition: 0.5s;
     color: #fff;
-    background: #106eea;
+    background: #ff5722;
     text-decoration: none;
 }
 
@@ -205,6 +210,12 @@ background-color: white;
 }
 
 /* ------------------------------
+#  Section
+------------------------------ */
+
+
+
+/* ------------------------------
 # Shop With Us Section
 ------------------------------ */
 #shop-with-us {
@@ -236,7 +247,7 @@ background-color: white;
 }
 
 .shop-with-us .icon-box:hover::before {
-    background: #106eea;
+    background: #ff5722;
     top: 0;
     border-radius: 0px;
 }
@@ -248,7 +259,7 @@ background-color: white;
 .shop-with-us .icon i {
     font-size: 48px;
     line-height: 1;
-    color: #106eea;
+    color: #ff5722;
     transition: all 0.3s ease-in-out;
 }
 
@@ -287,29 +298,13 @@ background-color: white;
 # Main
 ------------------------------ */
 
-main {
-    text-align: center;
-}
-
-main .carousel {
-    width:640px;
-    margin: auto;
-}
-
-/* main .item {
-    height:200px;
-}
-
-main .item img {
-    width: 100%;
-    height: 100% !important;
-    object-fit: cover;
-} */
 
 /* ------------------------------
 # Product Section
 ------------------------------ */
-
+.product_section a {
+    text-decoration: none;
+}
 .product_section .heading_container {
     margin-bottom: 20px;
 }
@@ -319,7 +314,6 @@ main .item img {
     margin-top: 25px;
     padding: 35px 35px;
     background-color: #f7f8f9;
-    -webkit-transition: all .3s;
     transition: all .3s;
     overflow: hidden;
     box-shadow: 5px 5px 5px -5px rgba(0,0,0,.2);
@@ -330,11 +324,7 @@ main .item img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     height: 215px;
 }
@@ -342,7 +332,6 @@ main .item img {
 .product_section .box .img-box img {
     max-width: 100%;
     max-height: 160px;
-    -webkit-transition: all .3s;
     transition: all .3s;
 }
 
@@ -351,8 +340,6 @@ main .item img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -368,14 +355,12 @@ main .item img {
 }
 
 .product_section .box:hover img {
-    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
 .product_section .box:hover .option_container {
     opacity: 1;
     visibility: visible;
-    -webkit-transform: translateY(0);
     transform: translateY(0);
 }
 .arrival_section {
@@ -391,32 +376,21 @@ main .item img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.6);
     z-index: 3;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all .2s;
     transition: all .2s;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    transform: translateY(100%);
 }
 
 .product_section .options {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -426,25 +400,24 @@ main .item img {
     border-radius: 30px;
     width: 165px;
     text-align: center;
-    -webkit-transition: all .3s;
     transition: all .3s;
     margin: 5px 0;
 }
 
 .product_section .options .option1 {
-    background-color: #f7444e;
-    border: 1px solid #f7444e;
+    background-color: #ff5722;
+    border: 1px solid #ff5722;
     color: #ffffff;
 }
 
 .product_section .options .option1:hover {
     background-color: transparent;
-    color: #f7444e;
+    color: #ff5722;
 }
 
 .product_section .options .option2 {
-    background-color: #000000;
-    border: 1px solid #000000;
+    background-color: #293241;
+    border: 1px solid #293241;
     color: #ffffff;
 }
 
@@ -457,8 +430,6 @@ main .item img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 45px;
 }
@@ -466,21 +437,20 @@ main .item img {
 .product_section .btn-box a {
     display: inline-block;
     padding: 10px 40px;
-    background-color: #f7444e;
-    border: 1px solid #f7444e;
+    background-color: #ff5722;
+    border: 1px solid #ff5722;
     color: #ffffff;
     border-radius: 0;
-    -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 .product_section .btn-box a:hover {
     background-color: transparent;
-    color: #f7444e;
+    color: #ff5722;
 }
 
 /* ------------------------------
-# We Want To Hear YouSection
+# We Want To Hear You Section
 ------------------------------ */
 .hear-you-section {
     text-align: center;
@@ -492,11 +462,12 @@ main .item img {
 .about {
     text-align: center;
     color: white;
+    background-color: #293241;
 }
 
 /* ------------------------------
 # Footer
 ------------------------------ */
 footer img {
-   
+
 }
